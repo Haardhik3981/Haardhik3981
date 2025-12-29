@@ -27,6 +27,31 @@ I build real-world applications that blend performance, design, and engineering 
 ## 👉 Projects
 
 ---
+### 🔹 CounselGPT — GPU-Optimized LLM Inference Platform
+**Fine-tuning + Hybrid RAG + CUDA Optimization**
+[➡️ GitHub Repository](https://github.com/Mati02K/CounselGPT)
+
+**Tech Stack:** ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white) ![CUDA](https://img.shields.io/badge/CUDA-76B900?logo=nvidia&logoColor=white) ![GCP](https://img.shields.io/badge/GCP-4285F4?logo=google-cloud&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white) ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?logo=prometheus&logoColor=white)
+
+* **Model Engineering:** Fine-tuned **Qwen-7B (8-bit)** using **LoRA** on specialized legal datasets.
+* **Inference Optimization:** Served models via GPU-optimized **llama.cpp** in custom **CUDA Docker images** on L4/L40 GPUs, supporting 4-bit and 8-bit quantization.
+* **Retrieval & Caching:** Built a **Hybrid RAG** system (BM25 + semantic embeddings) and achieved a **20x reduction** in repeated-query latency using **Redis semantic caching**.
+* **Observability:** Monitored RPS, GPU utilization, and memory metrics with an integrated **Prometheus/Grafana** pipeline.
+
+---
+
+### 🔹 Social Network Kubernetes Platform
+**Microservices + Infrastructure as Code + Observability**
+[➡️ GitHub Repository](https://github.com/Haardhik3981/deathstarbench-socialnetwork)
+
+**Tech Stack:** ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white) ![Helm](https://img.shields.io/badge/Helm-0F1628?logo=helm&logoColor=white) ![Nginx](https://img.shields.io/badge/Nginx-009639?logo=nginx&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white) ![Grafana](https://img.shields.io/badge/Grafana-F46800?logo=grafana&logoColor=white)
+
+* **Orchestration:** Engineered a modular platform of **11+ microservices** using **Helm** with service-specific overrides.
+* **Autoscaling:** Implemented **HPA**, maintaining a consistent **100ms latency** under a load of 2,000+ concurrent users.
+* **Data Persistence:** Automated the scaling and deployment of sharded **MongoDB**, **Redis clusters**, and **Memcached** via Python/Bash Helm hooks.
+* **Benchmarking:** Verified system reliability with **k6 tests**, achieving a **99.9% success rate** across 1.5M+ requests.
+
+---
 
 ### 🔹 Cloud-Native ChatBot + Generative LLM  
 **LLM inference + Serverless AWS + Full-stack deployment**  
